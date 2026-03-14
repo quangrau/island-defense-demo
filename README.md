@@ -6,7 +6,7 @@ Blue warriors vs Red warriors battle across a pixel-art archipelago. Answer ques
 
 ## Demo
 
-https://github.com/quangrau/island-defense-demo/raw/main/demo.mp4
+![Island Defense Demo](demo.gif)
 
 ## How to Run
 
