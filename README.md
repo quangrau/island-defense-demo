@@ -4,6 +4,10 @@ A tower-defense-style game built with **Phaser.js 3** and **React**. Part of [Ki
 
 Blue warriors vs Red warriors battle across a pixel-art archipelago. Answer questions to spawn your troops and destroy the enemy castle!
 
+## Demo
+
+https://github.com/quangrau/island-defense-demo/raw/main/demo.mp4
+
 ## How to Run
 
 Serve the folder with any static HTTP server:
