@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!-- Rounded Blue Background -->
+    <rect width="100" height="100" rx="20" fill="#0EA5E9"/>
+    
+    <!-- Yellow Lightning Bolt Icon with White Stroke -->
+    <path d="M40,10 L70,10 L55,45 L80,45 L30,90 L45,55 L20,55 Z" fill="#FBBF24" stroke="white" stroke-width="3"/>
+</svg>

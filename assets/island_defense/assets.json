@@ -1,0 +1,460 @@
+{
+  "meta": {
+    "name": "Island Defense Assets",
+    "description": "Curated Tiny Swords assets (Pixel Frog) for Island Defense game mode",
+    "version": "3.0.0",
+    "base_path": "/assets/island_defense",
+    "tile_size": 64,
+    "note": "All dimensions verified via sips. All filenames snake_case."
+  },
+  "buildings": {
+    "castle": { "width": 320, "height": 256 },
+    "tower": { "width": 128, "height": 256 },
+    "files": {
+      "blue_castle": "buildings/blue/castle.png",
+      "red_castle": "buildings/red/castle.png",
+      "blue_tower": "buildings/blue/tower.png",
+      "red_tower": "buildings/red/tower.png"
+    }
+  },
+  "units": {
+    "warrior": {
+      "frame_width": 192,
+      "frame_height": 192,
+      "animations": {
+        "idle": { "frames": 8 },
+        "run": { "frames": 6 },
+        "attack1": { "frames": 4 }
+      },
+      "files": {
+        "blue_idle": "units/blue/warrior/warrior_idle.png",
+        "blue_run": "units/blue/warrior/warrior_run.png",
+        "blue_attack1": "units/blue/warrior/warrior_attack1.png",
+        "red_idle": "units/red/warrior/warrior_idle.png",
+        "red_run": "units/red/warrior/warrior_run.png",
+        "red_attack1": "units/red/warrior/warrior_attack1.png"
+      }
+    },
+    "archer": {
+      "frame_width": 192,
+      "frame_height": 192,
+      "animations": {
+        "idle": { "frames": 6 },
+        "run": { "frames": 4 },
+        "shoot": { "frames": 8 }
+      },
+      "files": {
+        "blue_idle": "units/blue/archer/archer_idle.png",
+        "blue_run": "units/blue/archer/archer_run.png",
+        "blue_shoot": "units/blue/archer/archer_shoot.png",
+        "blue_arrow": "units/blue/archer/arrow.png",
+        "red_idle": "units/red/archer/archer_idle.png",
+        "red_run": "units/red/archer/archer_run.png",
+        "red_shoot": "units/red/archer/archer_shoot.png",
+        "red_arrow": "units/red/archer/arrow.png"
+      },
+      "extras": {
+        "arrow": { "width": 64, "height": 64 }
+      }
+    },
+    "torch": {
+      "frame_width": 192,
+      "frame_height": 192,
+      "sheet_size": "1344x960",
+      "columns": 7,
+      "rows": 5,
+      "total_frames": 35,
+      "animations": {
+        "idle": { "row": 0, "frames": 7 },
+        "run": { "row": 1, "frames": 7 },
+        "attack1": { "row": 2, "frames": 7 },
+        "attack2": { "row": 3, "frames": 7 },
+        "attack3": { "row": 4, "frames": 7 }
+      },
+      "files": {
+        "blue": "units/blue/torch/torch_blue.png",
+        "red": "units/red/torch/torch_red.png"
+      }
+    }
+  },
+  "terrain": {
+    "tileset": {
+      "tile_size": 64,
+      "columns": 9,
+      "rows": 6,
+      "files": {
+        "color1": "terrain/tileset/tilemap_color1.png",
+        "color2": "terrain/tileset/tilemap_color2.png",
+        "color3": "terrain/tileset/tilemap_color3.png",
+        "shadow": "terrain/tileset/shadow.png",
+        "water_background_color": "terrain/tileset/water_background_color.png",
+        "water_foam": "terrain/tileset/water_foam.png"
+      },
+      "dimensions": {
+        "tilemap": { "width": 576, "height": 384 },
+        "shadow": { "width": 192, "height": 192 },
+        "water_bg": { "width": 64, "height": 64 },
+        "water_foam": {
+          "width": 3072,
+          "height": 192,
+          "frame_size": "192x192",
+          "frames": 16
+        }
+      }
+    },
+    "trees": {
+      "frame_width": 192,
+      "frames": 8,
+      "files": {
+        "tree1": {
+          "file": "terrain/trees/tree1.png",
+          "width": 1536,
+          "height": 256
+        },
+        "tree2": {
+          "file": "terrain/trees/tree2.png",
+          "width": 1536,
+          "height": 256
+        },
+        "tree3": {
+          "file": "terrain/trees/tree3.png",
+          "width": 1536,
+          "height": 192
+        },
+        "tree4": {
+          "file": "terrain/trees/tree4.png",
+          "width": 1536,
+          "height": 192
+        }
+      }
+    },
+    "stumps": {
+      "note": "Static images, 192x256 each",
+      "files": {
+        "stump_1": {
+          "file": "terrain/trees/stump_1.png",
+          "width": 192,
+          "height": 256
+        },
+        "stump_2": {
+          "file": "terrain/trees/stump_2.png",
+          "width": 192,
+          "height": 256
+        },
+        "stump_3": {
+          "file": "terrain/trees/stump_3.png",
+          "width": 192,
+          "height": 256
+        },
+        "stump_4": {
+          "file": "terrain/trees/stump_4.png",
+          "width": 192,
+          "height": 256
+        }
+      }
+    },
+    "bushes": {
+      "frame_width": 128,
+      "frame_height": 128,
+      "frames": 8,
+      "files": {
+        "bushe1": "terrain/bushes/bushe1.png",
+        "bushe2": "terrain/bushes/bushe2.png"
+      },
+      "dimensions": { "width": 1024, "height": 128 }
+    },
+    "rocks": {
+      "width": 64,
+      "height": 64,
+      "files": {
+        "rock1": "terrain/rocks/rock1.png",
+        "rock2": "terrain/rocks/rock2.png",
+        "rock3": "terrain/rocks/rock3.png",
+        "rock4": "terrain/rocks/rock4.png"
+      }
+    },
+    "clouds": {
+      "note": "Static cloud images, 576x256 each",
+      "files": {
+        "clouds_01": "terrain/clouds/clouds_01.png",
+        "clouds_02": "terrain/clouds/clouds_02.png",
+        "clouds_03": "terrain/clouds/clouds_03.png",
+        "clouds_04": "terrain/clouds/clouds_04.png",
+        "clouds_05": "terrain/clouds/clouds_05.png",
+        "clouds_06": "terrain/clouds/clouds_06.png",
+        "clouds_07": "terrain/clouds/clouds_07.png",
+        "clouds_08": "terrain/clouds/clouds_08.png"
+      },
+      "dimensions": { "width": 576, "height": 256 }
+    },
+    "water_rocks": {
+      "frame_width": 64,
+      "frame_height": 64,
+      "frames": 16,
+      "files": {
+        "water_rocks_01": "terrain/water_rocks/water_rocks_01.png",
+        "water_rocks_02": "terrain/water_rocks/water_rocks_02.png",
+        "water_rocks_03": "terrain/water_rocks/water_rocks_03.png",
+        "water_rocks_04": "terrain/water_rocks/water_rocks_04.png"
+      },
+      "dimensions": { "width": 1024, "height": 64 }
+    },
+    "rubber_duck": {
+      "frame_width": 32,
+      "frame_height": 32,
+      "frames": 3,
+      "files": {
+        "rubber_duck": "terrain/rubber_duck/rubber_duck.png"
+      },
+      "dimensions": { "width": 96, "height": 32 }
+    },
+    "ground": {
+      "tilemap_flat": {
+        "file": "terrain/ground/tilemap_flat.png",
+        "width": 640,
+        "height": 256,
+        "tile_size": 64,
+        "columns": 10,
+        "rows": 4,
+        "note": "Two color variants side by side: green (cols 0-4) and sand (cols 5-9)"
+      },
+      "tilemap_elevation": {
+        "file": "terrain/ground/tilemap_elevation.png",
+        "width": 256,
+        "height": 512,
+        "tile_size": 64,
+        "columns": 4,
+        "rows": 8,
+        "note": "Cliff/stone elevation tiles"
+      },
+      "shadows": {
+        "file": "terrain/ground/shadows.png",
+        "width": 192,
+        "height": 192,
+        "note": "Static shadow sprite for elevation depth"
+      }
+    },
+    "sheep": {
+      "frame_width": 128,
+      "frame_height": 128,
+      "files": {
+        "sheep_idle": {
+          "file": "terrain/sheep/sheep_idle.png",
+          "width": 1024,
+          "height": 128,
+          "frames": 8
+        },
+        "sheep_bouncing": {
+          "file": "terrain/sheep/sheep_bouncing.png",
+          "width": 768,
+          "height": 128,
+          "frames": 6
+        },
+        "sheep_all": {
+          "file": "terrain/sheep/sheep_all.png",
+          "width": 1024,
+          "height": 256,
+          "columns": 8,
+          "rows": 2,
+          "frames": 16
+        }
+      }
+    },
+    "water": {
+      "water_tile": {
+        "file": "terrain/water/water.png",
+        "width": 64,
+        "height": 64,
+        "note": "Static water fill tile"
+      },
+      "foam": {
+        "file": "terrain/water/foam/foam.png",
+        "width": 1536,
+        "height": 192,
+        "frame_width": 192,
+        "frame_height": 192,
+        "frames": 8,
+        "note": "Animated foam ring (8 frames)"
+      },
+      "rocks": {
+        "frame_width": 128,
+        "frame_height": 128,
+        "frames": 8,
+        "files": {
+          "rocks_01": "terrain/water/rocks/rocks_01.png",
+          "rocks_02": "terrain/water/rocks/rocks_02.png",
+          "rocks_03": "terrain/water/rocks/rocks_03.png",
+          "rocks_04": "terrain/water/rocks/rocks_04.png"
+        },
+        "dimensions": { "width": 1024, "height": 128 }
+      }
+    }
+  },
+  "particles": {
+    "dust_01": {
+      "file": "particles/dust_01.png",
+      "width": 512,
+      "height": 64,
+      "frame_width": 64,
+      "frame_height": 64,
+      "frames": 8
+    },
+    "dust_02": {
+      "file": "particles/dust_02.png",
+      "width": 640,
+      "height": 64,
+      "frame_width": 64,
+      "frame_height": 64,
+      "frames": 10
+    },
+    "explosion_01": {
+      "file": "particles/explosion_01.png",
+      "width": 1536,
+      "height": 192,
+      "frame_width": 192,
+      "frame_height": 192,
+      "frames": 8
+    },
+    "explosion_02": {
+      "file": "particles/explosion_02.png",
+      "width": 1920,
+      "height": 192,
+      "frame_width": 192,
+      "frame_height": 192,
+      "frames": 10
+    },
+    "fire_01": {
+      "file": "particles/fire_01.png",
+      "width": 512,
+      "height": 64,
+      "frame_width": 64,
+      "frame_height": 64,
+      "frames": 8
+    },
+    "fire_02": {
+      "file": "particles/fire_02.png",
+      "width": 640,
+      "height": 64,
+      "frame_width": 64,
+      "frame_height": 64,
+      "frames": 10
+    },
+    "fire_03": {
+      "file": "particles/fire_03.png",
+      "width": 768,
+      "height": 64,
+      "frame_width": 64,
+      "frame_height": 64,
+      "frames": 12
+    },
+    "water_splash": {
+      "file": "particles/water_splash.png",
+      "width": 1728,
+      "height": 192,
+      "frame_width": 192,
+      "frame_height": 192,
+      "frames": 9
+    }
+  },
+  "ui": {
+    "bars": {
+      "big_bar_base": {
+        "file": "ui/bars/big_bar_base.png",
+        "width": 320,
+        "height": 64
+      },
+      "big_bar_fill": {
+        "file": "ui/bars/big_bar_fill.png",
+        "width": 64,
+        "height": 64
+      }
+    },
+    "banners": {
+      "banner": { "file": "ui/banners/banner.png", "width": 448, "height": 448 }
+    },
+    "buttons": {
+      "big_blue_regular": {
+        "file": "ui/buttons/big_blue_button_regular.png",
+        "width": 320,
+        "height": 320
+      },
+      "big_blue_pressed": {
+        "file": "ui/buttons/big_blue_button_pressed.png",
+        "width": 320,
+        "height": 320
+      },
+      "big_red_regular": {
+        "file": "ui/buttons/big_red_button_regular.png",
+        "width": 320,
+        "height": 320
+      },
+      "small_blue_round_regular": {
+        "file": "ui/buttons/small_blue_round_button_regular.png",
+        "width": 128,
+        "height": 128
+      },
+      "small_blue_round_pressed": {
+        "file": "ui/buttons/small_blue_round_button_pressed.png",
+        "width": 128,
+        "height": 128
+      },
+      "small_blue_square_regular": {
+        "file": "ui/buttons/small_blue_square_button_regular.png",
+        "width": 128,
+        "height": 128
+      },
+      "small_blue_square_pressed": {
+        "file": "ui/buttons/small_blue_square_button_pressed.png",
+        "width": 128,
+        "height": 128
+      }
+    },
+    "cursors": {
+      "cursor_01": {
+        "file": "ui/cursors/cursor_01.png",
+        "width": 64,
+        "height": 64
+      }
+    },
+    "avatars": {
+      "avatars_03": {
+        "file": "ui/avatars/avatars_03.png",
+        "width": 256,
+        "height": 256
+      }
+    },
+    "icons": {
+      "icon_01": { "file": "ui/icons/icon_01.png", "width": 64, "height": 64 },
+      "icon_10": { "file": "ui/icons/icon_10.png", "width": 64, "height": 64 }
+    },
+    "papers": {
+      "regular_paper": {
+        "file": "ui/papers/regular_paper.png",
+        "width": 320,
+        "height": 320
+      },
+      "special_paper": {
+        "file": "ui/papers/special_paper.png",
+        "width": 320,
+        "height": 320
+      }
+    },
+    "ribbons": {
+      "small_ribbons": {
+        "file": "ui/ribbons/small_ribbons.png",
+        "width": 320,
+        "height": 640
+      }
+    },
+    "swords": {
+      "swords": { "file": "ui/swords/swords.png", "width": 448, "height": 640 }
+    },
+    "wood_table": {
+      "wood_table": {
+        "file": "ui/wood_table/wood_table.png",
+        "width": 448,
+        "height": 448
+      }
+    }
+  }
+}
